@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> MME-RealWorld </title>
+  <title> MME-Unify </title>
   <link rel="icon" href="./static/images/logo.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -57,27 +57,6 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/VITA-MLLM/VITA">
-            <b>VITA</b> 
-          </a>
-          <a class="navbar-item" href="https://github.com/yfzhang114/SliME">
-            <b>SliME</b> 
-          </a>
-          <a class="navbar-item" href="https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models">
-            <b>MME</b> 
-          </a>
-          <a class="navbar-item" href="https://github.com/BradyFU/Video-MME">
-            <b>Video-MME</b> 
-          </a>   
-        </div>
-      </div>
     </div>
 
   </div>
@@ -91,41 +70,68 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
             <img src="static/images/logo.png" style="width:1.8em;vertical-align: middle" alt="Logo"/>
-            <span class="mme-realworld" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">MME-RealWorld</span>
+            <span class="MME-Unify" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">MME-Unify</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%;margin-bottom: 20px;">
-            <strong>Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?</strong>
+            <strong> A Comprehensive Benchmark for Unified Multimodal Understanding and Generation</strong>
           </h2>
           
-          <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
-            <span class="author-block">Yi-Fan Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Huanyu Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Haochen Tian<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Chaoyou Fu<sup style="color:#9400D3">2</sup>,</span>
-            <span class="author-block">Shuangqing Zhang<sup style="color:#9400D3">2</sup>,</span>
-            <span class="author-block">Junfei Wu<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Feng Li<sup style="color:#ed4b82">3</sup>,</span>
-            <span class="author-block">Kun Wang<sup style="color:#ffac33">4</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Qingsong Wen<sup style="color:#6fbf73">6</sup>,</span>
-            <span class="author-block">Zhang Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Liang Wang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
-            <span class="author-block">Rong Jin<sup style="color:#33ffd6;">7</sup>,</span>
-            <span class="author-block">Tieniu Tan<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#9400D3">2</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup></span>
-            <br><span class="author-block", style="font-size:25px;text-shadow: 2px 2px 4px rgba(67, 113, 232, 0.5)"><a href="http://www.cripac.ia.ac.cn/CN/model/index.htm">CASIA MAIS-NLPR</a></span></br>
-
-        </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup style="color:#53bcf5">1</sup>CASIA,</span>
-            <span class="author-block"><sup style="color:#9400D3">2</sup>NJU,</span>
-            <span class="author-block"><sup style="color:#ed4b82">3</sup>HKUST,</span>
-            <span class="author-block"><sup style="color:#ffac33">4</sup>NTU,</span>
-            <span class="author-block"><sup style="color:#1a4ebf">5</sup>UCAS,</span>
-            <span class="author-block"><sup style="color:#6fbf73">6</sup>Squirrel AI Learning,</span>
-            <span class="author-block"><sup style="color:#33ffd6">7</sup>Meta AI</span><br>
-            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
+          <div class="is-size-5 publication-authors" style="width: 100%; margin: 15px auto;">
+            <span class="author-block">
+              Wulin Xie<sup style="color:#18acfb;">1</sup><sup>*</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Yi-Fan Zhang<sup style="color:#18acfb;">1</sup><sup>*</sup><sup>†</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Chaoyou Fu<sup style="color:#ffac33;">4</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Yang Shi<sup style="color:#9400D3;">2</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Jianshu Zeng<sup style="color:#9400D3;">2</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Bingyan Nie<sup style="color:#18acfb;">1</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Hongkai Chen<sup style="color:#1a4ebf;">5</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Zhang Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Liang Wang<sup style="color:#18acfb;">1</sup><sup>,</sup>
+            </span>
+            <span class="author-block">
+              Tieniu Tan<sup style="color:#ffac33;">4</sup>
+            </span>
           </div>
-
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup style="color:#18acfb;">1</sup>CASIA,
+            </span>
+            <span class="author-block">
+              <sup style="color:#9400D3;">2</sup>PKU,
+            </span>
+            <span class="author-block">
+              <sup style="color:#ed4b82;">3</sup>UCAS,
+            </span>
+            <span class="author-block">
+              <sup style="color:#ffac33;">4</sup>NJU,
+            </span>
+            <span class="author-block">
+              <sup style="color:#1a4ebf;">5</sup>vivo
+            </span>
+            <br>
+            <span class="author-block" style="font-size:25px; text-shadow: 2px 2px 4px rgba(67, 113, 232, 0.5);">
+              * Equal Contribution&nbsp;&nbsp;&nbsp;† Project leader
+            </span>
+          </div>
+          
+          
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -142,7 +148,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/yfzhang114/MME-RealWorld"
+                <a href="https://github.com/aba122/MME-Unify"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -152,7 +158,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/yifanzhang114/MME-RealWorld"
+                <a href="https://huggingface.co/datasets/wulin222/MME-Unify"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-huggingface"></i> -->
@@ -161,16 +167,6 @@
                   <span>Dataset</span>
                 </a>
               </span> 
-              <!-- Leaderboard Link. -->
-              <span class="link-block">
-                <a href="#leaderboard"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <p style="font-size:18px">🏆</p>
-                  </span>
-                  <span>Leaderboard</span>
-                </a>
-              </span>
 
             </div>
 
@@ -183,34 +179,36 @@
 
 
 
+
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
-    <!-- Abstract. -->
+    <!-- Introduction -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
         <div class="content has-text-justified">
-          &nbsp;&nbsp;&nbsp;Existing Multimodal Large Language Model benchmarks present several common barriers that make it <strong>difficult to measure the significant challenges that models face in the real world</strong>, including:
-          1) small data scale leads to a large performance variance;
-          2) reliance on model-based annotations results in restricted data quality;
-          3) insufficient task difficulty, especially caused by the limited image resolution.<br>
+          &nbsp;&nbsp;&nbsp;Existing MLLM benchmarks face significant challenges in evaluating Unified MLLMs (U-MLLMs) due to:
+          1) lack of standardized benchmarks for traditional tasks, leading to inconsistent comparisons;
+          2) absence of benchmarks for mixed-modality generation, which fails to assess multimodal reasoning capabilities.<br>
+
+          &nbsp;&nbsp;&nbsp;We present a comprehensive evaluation framework designed to systematically assess U-MLLMs. Our benchmark includes:<br>
+
+          <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Standardized Traditional Task Evaluation.</strong> We sample from 12 datasets, covering 10 tasks with 30 subtasks, ensuring consistent and fair comparisons across studies.<br>
           
-          &nbsp;&nbsp;&nbsp;We present MME-RealWorld, <strong>a benchmark meticulously designed to address real-world applications with practical relevance.</strong> 
-          Featuring 13,366 high-resolution images averaging <strong>2,000 × 1,500</strong> pixels, MME-RealWorld poses substantial recognition challenges.
-           Our dataset encompasses <strong>29,429 annotations across 43 tasks</strong>, all expertly curated by a team of 25 crowdsource workers and 7 MLLM experts. 
-           The main advantages of MME-RealWorld compared to existing MLLM benchmarks as follows:<br>
-
-
-            <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Scale:</strong>  with the efforts of a total of 32 volunteers, we have manually annotated <strong>29,429 QA pairs</strong> focused on real-world scenarios, making this the largest fully human-annotated benchmark known to date.<br> 
-            <strong>&nbsp;&nbsp;&nbsp;2. Data Quality.</strong> 1) Resolution: Many image details, such as a scoreboard in a sports event, carry critical information. These details can only be properly interpreted with high- resolution images, which are essential for providing meaningful assistance to humans. To the best of our knowledge, MME-RealWorld features the highest average image resolution among existing competitors. 2) Annotation: All annotations are manually completed, with a professional team cross-checking the results to ensure data quality.<br>
-            <strong>&nbsp;&nbsp;&nbsp;3. Task Difficulty and Real-World Utility.</strong> We can see that even the most advanced models have not surpassed 60% accuracy. Additionally, many real-world tasks are significantly more difficult than those in traditional benchmarks. For example, in video monitoring, a model needs to count the presence of 133 vehicles, or in remote sensing, it must identify and count small objects on a map with an average resolution exceeding 5000×5000.<br>
-            <strong>&nbsp;&nbsp;4. MME-RealWorld-CN.</strong>  Existing Chinese benchmark is usually translated from its English version. This has two limitations: 1) Question-image mismatch. The image may relate to an English scenario, which is not intuitively connected to a Chinese question. 2) Translation mismatch. The machine translation is not always precise and perfect enough. We collect additional images that focus on Chinese scenarios, asking Chinese volunteers for annotation. This results in <strong>5,917 QA pairs.</strong><br>
+          <strong>&nbsp;&nbsp;&nbsp;&nbsp;2. Unified Task Assessment.</strong> We introduce five novel tasks testing multimodal reasoning, including image editing, commonsense QA with image generation, and geometric reasoning.<br>
+          
+          <strong>&nbsp;&nbsp;&nbsp;&nbsp;3. Comprehensive Model Benchmarking.</strong> We evaluate 12 leading U-MLLMs, such as Janus-Pro, EMU3, and VILA-U, alongside specialized understanding (e.g., Claude-3.5) and generation models (e.g., DALL-E-3).<br>
+          
+          &nbsp;&nbsp;&nbsp;Our findings reveal substantial performance gaps in existing U-MLLMs, highlighting the need for more robust models capable of handling mixed-modality tasks effectively.
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-</div>
+    <!--/ Introduction -->
+  </div>
 </section>
+
+
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -226,1128 +224,41 @@
   }
 </script>
 
-<section class="section">
+<div class="columns is-centered">
   <div class="container">
-    
-    <div class="columns is-centered">
-      <div class="column is-full has-text-centered content">
+    <div class="content has-text-centered">
+      <h2 class="title is-3">Leaderboard</h2>
 
-        <h2 class="title is-3" id="leaderboard" style="margin-top: -5%;">Leaderboard</h2>
-        <div class="content">
-          <p class="mt-3">Models are ranked according to their average performance on perception and reasoning tasks, from highest to lowest. 
-            <strong>“OCR”, “RS”, “DT”, “MO” and “AD” </strong> each indicate a specific task domain: Optical Character Recognition in the Wild, Remote Sensing, Diagram and Table, Monitoring, and  Autonomous Driving, respectively. 
-            <strong>“Avg” and “Avg-C”</strong> indicate the weighted average accuracy and the unweighted average accuracy across subtasks in each domain.
+      <div class="box m-5">
+        <div class="content has-text-centered">
+          <img src="static/images/leaderboard.png" alt="leaderboard" style="max-width: 140%;"/>
+          <p style="text-align: center; margin-top: 1%;">
+            <strong>Comparison of multimodal models on understanding, generation, unifying tasks, and overall MME-U Score.</strong><br/>
+            SIPU: Single Image Perception &amp; Understanding; 
+            MITIU: Multiple &amp; Interleaved Image-Text Understanding; 
+            VPU: Video Perception &amp; Understanding; 
+            CIVG: Conditional Image-to-Video Generation; 
+            FIR: Fine-grained Image Reconstruction; 
+            TIE: Text-Guided Image Editing; 
+            TIG: Text-to-Image Generation; 
+            TVG: Text-to-Video Generation; 
+            VP: Video Prediction; 
+            IEE: Image Editing and Explaining; 
+            CSQ: Common Sense Question Answering; 
+            AL: Auxiliary Lines; 
+            SD: SpotDiff; 
+            VCoT: Visual CoT.<br/>
+            <sup>*</sup> denotes U-MLLMs with the ability to generate interleaved images and texts, while <code>'-'</code> indicates that the model is unable to finish the corresponding task and 
+            <span style="text-decoration: underline;">underlined</span> content signifies the best performance within a single model across all methods on this task.
           </p>
-          <div class="video-duration">
-            <!-- <p>
-              <strong>Short Video:</strong> &lt; 2min  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <strong>Medium Video:</strong> 4min ~ 15min  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <strong>Long Video:</strong> 30min ~ 60min
-            </p> -->
-            <p>
-              By default, this leaderboard is sorted by results with <strong>Overall</strong>. To view other sorted results, please click on the corresponding cell.
-            </p>
-          </div>
-
-          <table class="js-sort-table" id="results" style="margin-left: auto; margin-right: auto;">
-            <thead>
-              <tr>
-                <th rowspan="3" class="no-sort" style="vertical-align: middle; width: 30px;" data-js-sort-colNum="none"><strong>#</strong></th>
-                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 215px;" data-js-sort-colNum="none"><strong>Method</strong></th>
-                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 30px;"><strong>LLM</strong></th>
-                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 100px;"><strong>Date</strong></th>
-                <th colspan="1" style="vertical-align: middle; width: 30 ;font-style: italic" data-js-sort-colNum="4"><strong>Overall</strong></th>
-                <th colspan="7" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="10"><strong>Perception</strong></th>
-                <th colspan="6" style="vertical-align: middle; width: 280px;" data-js-sort-colNum="16"><strong>Reasoning</strong></th>
-
-              </tr>
-              <tr>
-                <th colspan="3" class="no-sort"><strong>Task Split</strong></th>
-                <th data-js-sort-colNum="4" style="font-style: italic;"><strong>Avg</strong></th>
-                <th data-js-sort-colNum="5"><strong>OCR</strong></th>
-                <th data-js-sort-colNum="6"><strong>RS</strong></th>
-                <th data-js-sort-colNum="7"><strong>DT</strong></th>
-                <th data-js-sort-colNum="8"><strong>MO</strong></th>
-                <th data-js-sort-colNum="9"><strong>AD</strong></th>
-                <th data-js-sort-colNum="10"><strong>Avg</strong></th>
-                <th data-js-sort-colNum="11"><strong>Avg-C</strong></th>
-                <th data-js-sort-colNum="12"><strong>OCR</strong></th>
-                <th data-js-sort-colNum="13"><strong>DT</strong></th>
-                <th data-js-sort-colNum="14"><strong>MO</strong></th>
-                <th data-js-sort-colNum="15"><strong>AD</strong></th>
-                <th data-js-sort-colNum="16"><strong>Avg</strong></th>
-                <th data-js-sort-colNum="17"><strong>Avg-C</strong></th>
-
-              </tr>
-              <tr>
-                <th colspan="3" class="no-sort"><strong>QA pairs</strong></th>
-                <th data-js-sort-colNum="4" style="font-style: italic;"><strong>23599</strong></th>
-                <th data-js-sort-colNum="5"><strong>5740</strong></th>
-                <th data-js-sort-colNum="6"><strong>3738</strong></th>
-                <th data-js-sort-colNum="7"><strong>5433</strong></th>
-                <th data-js-sort-colNum="8"><strong>2196</strong></th>
-                <th data-js-sort-colNum="9"><strong>3660</strong></th>
-                <th data-js-sort-colNum="10"><strong>20767</strong></th>
-                <th data-js-sort-colNum="11"><strong>20767</strong></th>
-                <th data-js-sort-colNum="12"><strong>500</strong></th>
-                <th data-js-sort-colNum="13"><strong>500</strong></th>
-                <th data-js-sort-colNum="14"><strong>498</strong></th>
-                <th data-js-sort-colNum="15"><strong>1334</strong></th>
-                <th data-js-sort-colNum="16"><strong>2832</strong></th>
-                <th data-js-sort-colNum="17"><strong>2832</strong></th>
-
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://github.com/MetabrainAGI/Awaker" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                  Awaker2.5-VL
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Metabrain AGI</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">9.8B</td>
-                <td style="vertical-align: middle; color: #6fbf73;"><b>2024-11-17</b></td>
-
-                <td style="vertical-align: middle;"><strong>60.8</strong></td>  
-                <td style="vertical-align: middle;">83.34</td>
-                <td style="vertical-align: middle;">49.49</td>
-                <td style="vertical-align: middle;">72.72</td>
-                <td style="vertical-align: middle;">39.48</td>
-                <td style="vertical-align: middle;">45.38</td>
-                <td style="vertical-align: middle;"><strong>63.14</strong></td>
-                <td style="vertical-align: middle;"><strong>58.08</strong></td>
-
-                <td style="vertical-align: middle;">63.20</td>
-                <td style="vertical-align: middle;">49.40</td>
-                <td style="vertical-align: middle;">45.38</td>
-                <td style="vertical-align: middle;">33.78</td>
-                <td style="vertical-align: middle;"><strong>43.74</strong></td>
-                <td style="vertical-align: middle;"><strong>47.94</strong></td> 
-
-            </tr>
-
-            <tr>
-              <td style="vertical-align: middle;"></td>
-              <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://huggingface.co/OpenGVLab/InternVL2_5-8B" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                InternVL2.5
-                <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-              </a></b></td>
-              <td style="vertical-align: middle;">8B</td>
-              <td style="vertical-align: middle; color: #6fbf73;"><b>2024-12-08</b></td>
-              <td style="vertical-align: middle;"><strong>58.1</strong></td>  
-              <td style="vertical-align: middle;">79.49</td>
-              <td style="vertical-align: middle;">48.58</td>
-              <td style="vertical-align: middle;">71.07</td>
-              <td style="vertical-align: middle;">40.21</td>
-              <td style="vertical-align: middle;">37.35</td>
-              <td style="vertical-align: middle;"><strong>60.15</strong></td>
-              <td style="vertical-align: middle;"><strong>55.34</strong></td>
-
-              <td style="vertical-align: middle;">62.00</td>
-              <td style="vertical-align: middle;">51.80</td>
-              <td style="vertical-align: middle;">37.35</td>
-              <td style="vertical-align: middle;">34.23</td>
-              <td style="vertical-align: middle;"><strong>42.82</strong></td>
-              <td style="vertical-align: middle;"><strong>46.34</strong></td> 
-                           
-            </tr>
-            
-                <tr>
-                    <td style="vertical-align: middle;"></td>
-                    <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://arxiv.org/pdf/2408.03326" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                        LLaVA-OneVision
-                      <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
-                    </a></b></td>
-                    <td style="vertical-align: middle;">7B</td>
-                    <td style="vertical-align: middle; color: #6fbf73;"><b>2024-09-29</b></td>
-
-                    <td style="vertical-align: middle;"><strong>57.4</strong></td>  
-                    <td style="vertical-align: middle;">78.69</td>
-                    <td style="vertical-align: middle;">53.53</td>
-                    <td style="vertical-align: middle;">60.70</td>
-                    <td style="vertical-align: middle;">40.26</td>
-                    <td style="vertical-align: middle;">45.77</td>
-                    <td style="vertical-align: middle;"><strong>59.59</strong></td>
-                    <td style="vertical-align: middle;"><strong>55.81</strong></td>
-    
-                    <td style="vertical-align: middle;">61.80</td>
-                    <td style="vertical-align: middle;">40.00</td>
-                    <td style="vertical-align: middle;">40.76</td>
-                    <td style="vertical-align: middle;">34.08</td>
-                    <td style="vertical-align: middle;"><strong>41.17</strong></td>
-                    <td style="vertical-align: middle;"><strong>44.16</strong></td> 
-
-                </tr>
-              <tr>
-                  <td style="vertical-align: middle;"></td>
-                  <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                      Qwen2.5-VL
-                    <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
-                  </a></b></td>
-                  <td style="vertical-align: middle;">7B</td>
-                  <td style="vertical-align: middle; color: #6fbf73;"><b>2025-02-13</b></td>
-
-                  <td style="vertical-align: middle;"><strong>57.3</strong></td>  
-                  <td style="vertical-align: middle;">84.60</td>
-                  <td style="vertical-align: middle;">39.22</td>
-                  <td style="vertical-align: middle;">77.97</td>
-                  <td style="vertical-align: middle;">38.52</td>
-                  <td style="vertical-align: middle;">28.83</td>
-                  <td style="vertical-align: middle;"><strong>59.99</strong></td>
-                  <td style="vertical-align: middle;"><strong>53.83</strong></td>
-  
-                  <td style="vertical-align: middle;">62.80</td>
-                  <td style="vertical-align: middle;">59.80</td>
-                  <td style="vertical-align: middle;">20.88</td>
-                  <td style="vertical-align: middle;">26.04</td>
-                  <td style="vertical-align: middle;"><strong>37.54</strong></td>
-                  <td style="vertical-align: middle;"><strong>42.61</strong></td> 
-                               
-                </tr>
-                <tr>
-                    <td style="vertical-align: middle;"></td>
-                    <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                        Qwen2-VL
-                      <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
-                    </a></b></td>
-                    <td style="vertical-align: middle;">7B</td>
-                    <td style="vertical-align: middle; color: #6fbf73;"><b>2024-09-03</b></td>
-
-                    <td style="vertical-align: middle;"><strong>56.5</strong></td>  
-                    <td style="vertical-align: middle;">81.38</td>
-                    <td style="vertical-align: middle;">44.81</td>
-                    <td style="vertical-align: middle;">70.18</td>
-                    <td style="vertical-align: middle;">37.30</td>
-                    <td style="vertical-align: middle;">34.62</td>
-                    <td style="vertical-align: middle;"><strong>58.96</strong></td>
-                    <td style="vertical-align: middle;"><strong>53.66</strong></td>
-    
-                    <td style="vertical-align: middle;">63.40</td>
-                    <td style="vertical-align: middle;">48.60</td>
-                    <td style="vertical-align: middle;">33.13</td>
-                    <td style="vertical-align: middle;">31.47</td>
-                    <td style="vertical-align: middle;"><strong>40.39</strong></td>
-                    <td style="vertical-align: middle;"><strong>44.15</strong></td> 
-                                 
-                  </tr>
-                  <tr>
-                    <td style="vertical-align: middle;"></td>
-                    <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="xiaosuan.com" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                        Xiaosuan-2.0-VL
-                      <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenBayes</p>
-                    </a></b></td>
-                    <td style="vertical-align: middle;">-</td>
-                    <td style="vertical-align: middle; color: #6fbf73;"><b>2024-09-30</b></td>
-
-                    <td style="vertical-align: middle;"><strong>55.7</strong></td>  
-                    <td style="vertical-align: middle;">80.75</td>
-                    <td style="vertical-align: middle;">44.66</td>
-                    <td style="vertical-align: middle;">68.01</td>
-                    <td style="vertical-align: middle;">37.07</td>
-                    <td style="vertical-align: middle;">31.94</td>
-                    <td style="vertical-align: middle;"><strong>57.64</strong></td>
-                    <td style="vertical-align: middle;"><strong>52.48</strong></td>
-    
-                    <td style="vertical-align: middle;">63.40</td>
-                    <td style="vertical-align: middle;">49.40</td>
-                    <td style="vertical-align: middle;">35.74</td>
-                    <td style="vertical-align: middle;">31.62</td>
-                    <td style="vertical-align: middle;"><strong>41.06</strong></td>
-                    <td style="vertical-align: middle;"><strong>45.04</strong></td> 
-                                 
-                  </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://github.com/OpenGVLab/InternVL" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                  InternVL2
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-                <td style="vertical-align: middle;"><strong>53.5</strong></td>  
-                <td style="vertical-align: middle;">73.92</td>
-                <td style="vertical-align: middle;">39.35</td>
-                <td style="vertical-align: middle;">62.80</td>
-                <td style="vertical-align: middle;">53.19</td>
-                <td style="vertical-align: middle;">35.46</td>
-                <td style="vertical-align: middle;"><strong>55.82</strong></td>
-                <td style="vertical-align: middle;"><strong>52.94</strong></td>
-
-                <td style="vertical-align: middle;">57.40</td>
-                <td style="vertical-align: middle;">39.00</td>
-                <td style="vertical-align: middle;">43.57</td>
-                <td style="vertical-align: middle;">29.84</td>
-                <td style="vertical-align: middle;"><strong>38.74</strong></td>
-                <td style="vertical-align: middle;"><strong>42.45</strong></td> 
-                             
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://www.anthropic.com/news/claude-3-5-sonnet" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Claude 3.5 Sonnet
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Anthropic</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">-</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>51.6</strong></td>   
-                <td style="vertical-align: middle;">72.47</td>
-                <td style="vertical-align: middle;">25.74</td>
-                <td style="vertical-align: middle;">67.44</td>
-                <td style="vertical-align: middle;">32.19</td>
-                <td style="vertical-align: middle;">40.77</td>
-
-                <td style="vertical-align: middle;"><strong>52.90</strong></td>
-                <td style="vertical-align: middle;"><strong>47.72</strong></td>
-
-
-                <td style="vertical-align: middle;">61.90</td>
-                <td style="vertical-align: middle;">61.20</td>
-                <td style="vertical-align: middle;">41.79</td>
-                <td style="vertical-align: middle;">31.92</td>
-                <td style="vertical-align: middle;"><strong>44.12</strong></td>
-                <td style="vertical-align: middle;"><strong>49.20</strong></td>        
-                
-          
-              </tr>
-
-              
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://arxiv.org/pdf/2309.15112" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                  InternLM-XComposer2.5
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>50.0</strong></td>   
-                <td style="vertical-align: middle;">69.25 </td>
-                <td style="vertical-align: middle;">36.12</td>
-                <td style="vertical-align: middle;">63.92 </td>
-                <td style="vertical-align: middle;">39.48</td>
-                <td style="vertical-align: middle;">33.63</td>
-                <td style="vertical-align: middle;"><strong>52.47</strong></td>
-                <td style="vertical-align: middle;"><strong>48.48</strong></td>
-
-                <td style="vertical-align: middle;">53.40</td>
-                <td style="vertical-align: middle;">41.00</td>
-                <td style="vertical-align: middle;">17.67</td>
-                <td style="vertical-align: middle;">29.99</td>
-                <td style="vertical-align: middle;"><strong>33.90</strong></td>
-                <td style="vertical-align: middle;"><strong>35.52</strong></td> 
-          
-
-              </tr>   
-            
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/OpenGVLab/InternVL" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    InternVL-Chat-V1.5
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Shanghai AI Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">20B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>49.4</strong></td> 
-                <td style="vertical-align: middle;">71.51</td>
-                <td style="vertical-align: middle;">33.55</td>
-                <td style="vertical-align: middle;">55.83</td>
-                <td style="vertical-align: middle;">51.16</td>
-                <td style="vertical-align: middle;">31.42</td>
-                <td style="vertical-align: middle;"><strong>51.56</strong></td>
-                <td style="vertical-align: middle;"><strong>48.69</strong></td>
-
-                <td style="vertical-align: middle;">56.80</td>
-                <td style="vertical-align: middle;">35.40</td>
-                <td style="vertical-align: middle;">37.35</td>
-                <td style="vertical-align: middle;">28.94</td>
-                <td style="vertical-align: middle;"><strong>36.48</strong></td>
-                <td style="vertical-align: middle;"><strong>39.62</strong></td>   
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/VITA-MLLM/VITA" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    VITA
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tencent Youtu Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">8*7B</td>
-                <td style="vertical-align: middle; color: #6fbf73;"><b>2024-09-12</b></td>
-
-                <td style="vertical-align: middle;"><strong>47.5</strong></td> 
-                <td style="vertical-align: middle;">70.60</td>
-                <td style="vertical-align: middle;">39.40</td>
-                <td style="vertical-align: middle;">42.60</td>
-                <td style="vertical-align: middle;">37.50</td>
-                <td style="vertical-align: middle;">38.20</td>
-                <td style="vertical-align: middle;"><strong>48.40</strong></td>
-                <td style="vertical-align: middle;"><strong>45.66</strong></td>
-
-                <td style="vertical-align: middle;">62.20</td>
-                <td style="vertical-align: middle;">31.80</td>
-                <td style="vertical-align: middle;">43.20</td>
-                <td style="vertical-align: middle;">35.40</td>
-                <td style="vertical-align: middle;"><strong>40.90</strong></td>
-                <td style="vertical-align: middle;"><strong>43.15</strong></td>   
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2403.18814" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Mini-Gemini-34B-HD
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">CUHK</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">34B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>45.9</strong></td>             
-
-                <td style="vertical-align: middle;">69.55</td>
-                <td style="vertical-align: middle;">40.40</td>
-                <td style="vertical-align: middle;">44.36</td>
-                <td style="vertical-align: middle;">39.61</td>
-                <td style="vertical-align: middle;">32.70</td>
-                <td style="vertical-align: middle;"><strong>48.05</strong></td>
-                <td style="vertical-align: middle;"><strong>45.32</strong></td>
-
-                <td style="vertical-align: middle;">59.20</td>
-                <td style="vertical-align: middle;">39.20</td>
-                <td style="vertical-align: middle;">20.48</td>
-                <td style="vertical-align: middle;">22.84</td>
-                <td style="vertical-align: middle;"><strong>31.73</strong></td>
-                <td style="vertical-align: middle;"><strong>35.43</strong></td>   
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/OpenBMB/MiniCPM-V" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    MiniCPM-V 2.5
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenBMB</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">8B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>45.6</strong></td>  
-                <td style="vertical-align: middle;">66.79 </td>
-                <td style="vertical-align: middle;">27.69 </td>
-                <td style="vertical-align: middle;">52.81</td>
-                <td style="vertical-align: middle;">38.70</td>
-                <td style="vertical-align: middle;">34.15</td>
-                <td style="vertical-align: middle;"><strong>47.37</strong></td>
-                <td style="vertical-align: middle;"><strong>44.03</strong></td>
-               
-                <td style="vertical-align: middle;">44.00</td>
-                <td style="vertical-align: middle;">31.80</td>
-                <td style="vertical-align: middle;">36.95</td>
-                <td style="vertical-align: middle;">31.03</td>
-                <td style="vertical-align: middle;"><strong>34.50</strong></td>
-                <td style="vertical-align: middle;"><strong>35.95</strong></td>  
-           
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    GPT-4o
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">-</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>45.2</strong></td>      
-                <td style="vertical-align: middle;">77.69</td>
-                <td style="vertical-align: middle;">28.92</td>
-                <td style="vertical-align: middle;">46.68</td>
-                <td style="vertical-align: middle;">33.93</td>
-                <td style="vertical-align: middle;">22.43</td>
-                <td style="vertical-align: middle;"><strong>46.43</strong></td>
-                <td style="vertical-align: middle;"><strong>41.93</strong></td>
-
-                <td style="vertical-align: middle;">61.40</td>
-                <td style="vertical-align: middle;">44.80</td>
-                <td style="vertical-align: middle;">36.51</td>
-                <td style="vertical-align: middle;">26.41</td>
-                <td style="vertical-align: middle;"><strong>37.61</strong></td>
-                <td style="vertical-align: middle;"><strong>42.28</strong></td>   
-       
-
-              </tr>
-
-
-            
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/THUDM/CogVLM2" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    CogVLM2-llama3-Chat
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">THU & Zhipu AI</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">8B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>44.6</strong></td>    
-                <td style="vertical-align: middle;">69.97</td>
-                <td style="vertical-align: middle;">28.76</td>
-                <td style="vertical-align: middle;">47.51</td>
-                <td style="vertical-align: middle;">33.74</td>
-                <td style="vertical-align: middle;">30.22</td>
-                <td style="vertical-align: middle;"><strong>45.85</strong></td>
-                <td style="vertical-align: middle;"><strong>42.04</strong></td>
-
-                <td style="vertical-align: middle;">54.00</td>
-                <td style="vertical-align: middle;">32.80</td>
-                <td style="vertical-align: middle;">41.16</td>
-                <td style="vertical-align: middle;">31.18</td>
-                <td style="vertical-align: middle;"><strong>37.25</strong></td>
-                <td style="vertical-align: middle;"><strong>39.62</strong></td> 
-         
-
-                         
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2406.16860" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Cambrain-1-34B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">NYU</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">34B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>44.1</strong></td>             
-
-                <td style="vertical-align: middle;">66.45</td>
-                <td style="vertical-align: middle;">38.63</td>
-                <td style="vertical-align: middle;">40.44</td>
-                <td style="vertical-align: middle;">45.98</td>
-                <td style="vertical-align: middle;">33.61</td>
-
-                <td style="vertical-align: middle;"><strong>46.68</strong></td>
-                <td style="vertical-align: middle;"><strong>45.02</strong></td>
-
-                <td style="vertical-align: middle;">55.00</td>
-                <td style="vertical-align: middle;">36.00</td>
-                <td style="vertical-align: middle;">19.48</td>
-                <td style="vertical-align: middle;">16.07</td>
-                <td style="vertical-align: middle;"><strong>27.06</strong></td>
-                <td style="vertical-align: middle;"><strong>31.64</strong></td>     
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2406.16860" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Cambrain-1-8B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">NYU</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">8B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>42.7</strong></td>             
-
-                <td style="vertical-align: middle;">58.68</td>
-                <td style="vertical-align: middle;">40.05</td>
-                <td style="vertical-align: middle;">32.73</td>
-                <td style="vertical-align: middle;">47.68</td>
-                <td style="vertical-align: middle;">38.52</td>
-                <td style="vertical-align: middle;"><strong>43.82</strong></td>
-                <td style="vertical-align: middle;"><strong>43.53</strong></td>
-
-                <td style="vertical-align: middle;">53.20</td>
-                <td style="vertical-align: middle;">27.40</td>
-                <td style="vertical-align: middle;">42.37</td>
-                <td style="vertical-align: middle;">30.73</td>
-                <td style="vertical-align: middle;"><strong>36.16</strong></td>
-                <td style="vertical-align: middle;"><strong>38.43</strong></td>  
-
-              </tr>    
-
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/yfzhang114/SliME" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    SliME-8B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">CASIA</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">8B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>39.6</strong></td>             
-
-                <td style="vertical-align: middle;">53.45 </td>
-                <td style="vertical-align: middle;">42.27 </td>
-                <td style="vertical-align: middle;">29.34 </td>
-                <td style="vertical-align: middle;">40.62 </td>
-                <td style="vertical-align: middle;">33.66 </td>
-                <td style="vertical-align: middle;"><strong>40.29</strong></td>
-                <td style="vertical-align: middle;"><strong>39.87</strong></td>
-
-                <td style="vertical-align: middle;">53.20</td>
-                <td style="vertical-align: middle;">29.40</td>
-                <td style="vertical-align: middle;">36.14</td>
-                <td style="vertical-align: middle;">31.55</td>
-                <td style="vertical-align: middle;"><strong>35.80</strong></td>
-                <td style="vertical-align: middle;"><strong>37.57</strong></td>    
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;">
-                  <b class="">
-                    <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                      Gemini-1.5-Pro</a>
-                    <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google</p>
-                  </b>
-                </td>
-                <td style="vertical-align: middle;">-</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>38.2</strong></td>             
-
-                <td style="vertical-align: middle;">67.62</td>
-                <td style="vertical-align: middle;">13.99</td>
-                <td style="vertical-align: middle;">39.90</td>
-                <td style="vertical-align: middle;">31.11</td>
-                <td style="vertical-align: middle;">26.64</td>
-                <td style="vertical-align: middle;"><strong>39.63</strong></td>
-                <td style="vertical-align: middle;"><strong>35.85</strong></td>
-
-                <td style="vertical-align: middle;">52.70</td>
-                <td style="vertical-align: middle;">33.20</td>
-                <td style="vertical-align: middle;">28.33</td>
-                <td style="vertical-align: middle;">19.20</td>
-                <td style="vertical-align: middle;"><strong>29.19</strong></td>
-                <td style="vertical-align: middle;"><strong>33.36</strong></td> 
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    GPT-4o-mini
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">OpenAI</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">-</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>36.4</strong></td>             
-
-                <td style="vertical-align: middle;">62.51</td>
-                <td style="vertical-align: middle;"> 6.69 </td>
-                <td style="vertical-align: middle;">44.23 </td>
-                <td style="vertical-align: middle;">26.50 </td>
-                <td style="vertical-align: middle;">24.18 </td>
-
-
-                <td style="vertical-align: middle;"><strong>37.12</strong> </td>
-                <td style="vertical-align: middle;"><strong>32.82</strong> </td>
-
-
-                <td style="vertical-align: middle;">47.00</td>
-                <td style="vertical-align: middle;">39.08</td>
-                <td style="vertical-align: middle;">25.81</td>
-                <td style="vertical-align: middle;">26.76</td>
-                <td style="vertical-align: middle;"><strong>32.48</strong></td>
-                <td style="vertical-align: middle;"><strong>24.85</strong></td>    
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2311.06607" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Monkey
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">HUST</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>35.3</strong></td>             
-
-                <td style="vertical-align: middle;">54.63</td>
-                <td style="vertical-align: middle;">24.99</td>
-                <td style="vertical-align: middle;">23.51</td>
-                <td style="vertical-align: middle;">28.01</td>
-                <td style="vertical-align: middle;">29.67</td>
-
-
-                <td style="vertical-align: middle;"><strong>36.30</strong> </td>
-                <td style="vertical-align: middle;"><strong>33.96</strong> </td>
-
-                <td style="vertical-align: middle;">27.20</td>
-                <td style="vertical-align: middle;">20.80</td>
-                <td style="vertical-align: middle;">27.31</td>
-                <td style="vertical-align: middle;">33.04</td>
-                <td style="vertical-align: middle;"><strong>28.84</strong></td>
-                <td style="vertical-align: middle;"><strong>27.09</strong></td>   
-
-              </tr>          
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2403.12895" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    mPLUG-DocOwl 1.5
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>32.7</strong></td>             
-
-                <td style="vertical-align: middle;">51.15</td>
-                <td style="vertical-align: middle;">23.71</td>
-                <td style="vertical-align: middle;">29.34</td>
-                <td style="vertical-align: middle;">24.97</td>
-                <td style="vertical-align: middle;">28.28</td>
-
-
-                <td style="vertical-align: middle;"><strong>33.71</strong> </td>
-                <td style="vertical-align: middle;"><strong>31.49</strong> </td>
-
-                <td style="vertical-align: middle;">42.60</td>
-                <td style="vertical-align: middle;">19.80</td>
-                <td style="vertical-align: middle;">20.48</td>
-                <td style="vertical-align: middle;">26.04</td>
-                <td style="vertical-align: middle;"><strong>26.88</strong></td>
-                <td style="vertical-align: middle;"><strong>27.23</strong></td> 
-
-              </tr> 
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2403.05525" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    DeepSeek-VL
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">DeepSeek-AI</p>
-                </a> </b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>32.4</strong></td>             
-
-                <td style="vertical-align: middle;">49.55 </td>
-                <td style="vertical-align: middle;">25.49</td>
-                <td style="vertical-align: middle;">23.38</td>
-                <td style="vertical-align: middle;">26.97</td>
-                <td style="vertical-align: middle;">33.39</td>
-
-
-                <td style="vertical-align: middle;"><strong>33.14</strong> </td>
-                <td style="vertical-align: middle;"><strong>31.76</strong> </td>
-
-
-                <td style="vertical-align: middle;">45.20</td>
-                <td style="vertical-align: middle;">23.80</td>
-                <td style="vertical-align: middle;">16.67</td>
-                <td style="vertical-align: middle;">27.31</td>
-                <td style="vertical-align: middle;"><strong>27.98</strong></td>
-                <td style="vertical-align: middle;"><strong>28.25</strong></td>   
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://github.com/yfzhang114/SliME" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                  SliME-13B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">CASIA</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">13B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>31.7</strong></td>             
-
-                <td style="vertical-align: middle;">50.58</td>
-                <td style="vertical-align: middle;">25.82</td>
-                <td style="vertical-align: middle;">20.93</td>
-                <td style="vertical-align: middle;">24.73</td>
-                <td style="vertical-align: middle;">27.16</td>
-
-
-                <td style="vertical-align: middle;"><strong>31.50</strong> </td>
-                <td style="vertical-align: middle;"><strong>29.84</strong> </td>
-
-                <td style="vertical-align: middle;">41.00</td>
-                <td style="vertical-align: middle;">39.00</td>
-                <td style="vertical-align: middle;">33.13</td>
-                <td style="vertical-align: middle;">30.80</td>
-                <td style="vertical-align: middle;"><strong>34.46</strong></td>
-                <td style="vertical-align: middle;"><strong>35.98</strong></td>  
-
-              </tr>
-
-              
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2403.04652" class="ext-link" style="font-size: 16px; margin-left: 5px;"> 
-                  YI-VL-34B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">01.AI</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">34B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>31.0</strong></td>             
-
-                <td style="vertical-align: middle;">44.95</td>
-                <td style="vertical-align: middle;">31.62</td>
-                <td style="vertical-align: middle;">15.99</td>
-                <td style="vertical-align: middle;">34.85</td>
-                <td style="vertical-align: middle;">28.31</td>
-
-
-                <td style="vertical-align: middle;"><strong>30.97</strong> </td>
-                <td style="vertical-align: middle;"><strong>31.14</strong> </td>
-
-                <td style="vertical-align: middle;">42.40</td>
-                <td style="vertical-align: middle;">26.00</td>
-                <td style="vertical-align: middle;">31.33</td>
-                <td style="vertical-align: middle;">31.55</td>
-                <td style="vertical-align: middle;"><strong>32.45</strong></td>
-                <td style="vertical-align: middle;"><strong>32.82</strong></td>   
-
-              </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://arxiv.org/pdf/2403.18814" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                  Mini-Gemini-7B-HD
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">CUHK</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>30.3</strong></td>             
-
-                <td style="vertical-align: middle;">42.02</td>
-                <td style="vertical-align: middle;">31.30</td>
-                <td style="vertical-align: middle;">22.31</td>
-                <td style="vertical-align: middle;">34.15</td>
-                <td style="vertical-align: middle;">24.81</td>
-
-
-                <td style="vertical-align: middle;"><strong>31.07</strong> </td>
-                <td style="vertical-align: middle;"><strong>30.92</strong> </td>
-
-                <td style="vertical-align: middle;">35.40</td>
-                <td style="vertical-align: middle;">24.60</td>
-                <td style="vertical-align: middle;">25.90</td>
-                <td style="vertical-align: middle;">23.29</td>
-                <td style="vertical-align: middle;"><strong>26.12</strong></td>
-                <td style="vertical-align: middle;"><strong>27.30</strong></td>   
-
-              </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/LLaVA-VL/LLaVA-NeXT/" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    LLaVA-NeXT-LLama3-8B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">8B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>30.2</strong></td>             
-
-                <td style="vertical-align: middle;">47.94</td>
-                <td style="vertical-align: middle;">25.42</td>
-                <td style="vertical-align: middle;">26.63</td>
-                <td style="vertical-align: middle;">19.46</td>
-                <td style="vertical-align: middle;">18.66</td>
-
-
-                <td style="vertical-align: middle;"><strong>30.14</strong> </td>
-                <td style="vertical-align: middle;"><strong>27.62</strong> </td>
-
-
-                <td style="vertical-align: middle;">55.20</td>
-                <td style="vertical-align: middle;">23.40</td>
-                <td style="vertical-align: middle;">21.08</td>
-                <td style="vertical-align: middle;">30.73</td>
-                <td style="vertical-align: middle;"><strong>32.06</strong></td>
-                <td style="vertical-align: middle;"><strong>32.60</strong></td> 
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/LLaVA-VL/LLaVA-NeXT/" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    LLaVA-NeXT-Qwen-72B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">72B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>28.7</strong></td>             
-
-                <td style="vertical-align: middle;">37.07</td>
-                <td style="vertical-align: middle;">29.13</td>
-                <td style="vertical-align: middle;">27.68</td>
-                <td style="vertical-align: middle;">29.37</td>
-                <td style="vertical-align: middle;">17.98</td>
-
-
-                <td style="vertical-align: middle;"><strong>29.01</strong> </td>
-                <td style="vertical-align: middle;"><strong>28.25</strong> </td>
-
-                <td style="vertical-align: middle;">17.20</td>
-                <td style="vertical-align: middle;">34.20</td>
-                <td style="vertical-align: middle;">27.31</td>
-                <td style="vertical-align: middle;">29.69</td>
-                <td style="vertical-align: middle;"><strong>27.86</strong></td>
-                <td style="vertical-align: middle;"><strong>27.10</strong></td>      
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/abs/2310.03744" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    LLaVA1.5-13B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">UW-Madison</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">13B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>28.0</strong></td>             
-
-                <td style="vertical-align: middle;">44.10</td>
-                <td style="vertical-align: middle;">23.27</td>
-                <td style="vertical-align: middle;">20.17</td>
-                <td style="vertical-align: middle;">20.45</td>
-                <td style="vertical-align: middle;">26.12</td>
-
-
-                <td style="vertical-align: middle;"><strong>28.42</strong> </td>
-                <td style="vertical-align: middle;"><strong>26.82</strong> </td>
-
-                <td style="vertical-align: middle;">30.20</td>
-                <td style="vertical-align: middle;">20.80</td>
-                <td style="vertical-align: middle;">27.51</td>
-                <td style="vertical-align: middle;">24.78</td>
-                <td style="vertical-align: middle;"><strong>25.51</strong></td>
-                <td style="vertical-align: middle;"><strong>25.82</strong></td>   
-                                             
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/abs/2311.12793" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    ShareGPT4V-13B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">USTC & Shanghai AI Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">13B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>27.8</strong></td>             
-
-                <td style="vertical-align: middle;">44.55</td>
-                <td style="vertical-align: middle;">23.06</td>
-                <td style="vertical-align: middle;">20.17</td>
-                <td style="vertical-align: middle;">19.26</td>
-                <td style="vertical-align: middle;">26.12</td>
-
-
-                <td style="vertical-align: middle;"><strong>28.38</strong> </td>
-                <td style="vertical-align: middle;"><strong>26.63</strong> </td>
-
-
-                <td style="vertical-align: middle;">26.00</td>
-                <td style="vertical-align: middle;">20.80</td>
-                <td style="vertical-align: middle;">27.31</td>
-                <td style="vertical-align: middle;">24.55</td>
-                <td style="vertical-align: middle;"><strong>24.63</strong></td>
-                <td style="vertical-align: middle;"><strong>24.67</strong></td>   
-
-              </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2310.09478" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    MiniGPT-v2
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">KAUST & Meta AI</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>26.4</strong></td>                                   
-
-                <td style="vertical-align: middle;">39.02</td>
-                <td style="vertical-align: middle;">23.33</td>
-                <td style="vertical-align: middle;">20.41</td>
-                <td style="vertical-align: middle;">19.26</td>
-                <td style="vertical-align: middle;">25.96</td>
-
-
-                <td style="vertical-align: middle;"><strong>26.94</strong> </td>
-                <td style="vertical-align: middle;"><strong>25.60</strong> </td>
-
-                <td style="vertical-align: middle;">30.00</td>
-                <td style="vertical-align: middle;">20.40</td>
-                <td style="vertical-align: middle;">16.87</td>
-                <td style="vertical-align: middle;">23.66</td>
-                <td style="vertical-align: middle;"><strong>23.01</strong></td>
-                <td style="vertical-align: middle;"><strong>22.73</strong></td> 
-
-              </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/abs/2311.12793" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    ShareGPT4V-7B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">USTC & Shanghai AI Lab</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>26.3</strong></td>                                 
-
-                <td style="vertical-align: middle;">39.39</td>
-                <td style="vertical-align: middle;">22.10</td>
-                <td style="vertical-align: middle;">20.08</td>
-                <td style="vertical-align: middle;">19.13</td>
-                <td style="vertical-align: middle;">26.04</td>
-
-
-                <td style="vertical-align: middle;"><strong>26.73</strong> </td>
-                <td style="vertical-align: middle;"><strong>22.35</strong> </td>
-
-                <td style="vertical-align: middle;">24.15</td>
-                <td style="vertical-align: middle;">20.60</td>
-                <td style="vertical-align: middle;">26.10</td>
-                <td style="vertical-align: middle;">24.18</td>
-                <td style="vertical-align: middle;"><strong>23.88</strong></td>
-                <td style="vertical-align: middle;"><strong>23.76</strong></td>
-
-              </tr>
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/abs/2310.03744" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    LLaVA1.5-7B
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">UW-Madison</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>26.1</strong></td>                                
-
-                <td style="vertical-align: middle;">38.69</td>
-                <td style="vertical-align: middle;">22.12</td>
-                <td style="vertical-align: middle;">20.08</td>
-                <td style="vertical-align: middle;">19.13</td>
-                <td style="vertical-align: middle;">16.04</td>
-
-
-                <td style="vertical-align: middle;"><strong>26.54</strong> </td>
-                <td style="vertical-align: middle;"><strong>25.21</strong> </td>
-
-                <td style="vertical-align: middle;">26.00</td>
-                <td style="vertical-align: middle;">20.60</td>
-                <td style="vertical-align: middle;">25.90</td>
-                <td style="vertical-align: middle;">24.18</td>
-                <td style="vertical-align: middle;"><strong>24.17</strong></td>
-                <td style="vertical-align: middle;"><strong>24.17</strong></td> 
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://github.com/QwenLM/Qwen-VL" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    Qwen-VL-Chat
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>21.1</strong></td>                              
-
-                <td style="vertical-align: middle;">32.37</td>
-                <td style="vertical-align: middle;">15.14</td>
-                <td style="vertical-align: middle;">15.59</td>
-                <td style="vertical-align: middle;">22.13</td>
-                <td style="vertical-align: middle;">15.08</td>
-
-
-                <td style="vertical-align: middle;"><strong>20.75</strong> </td>
-                <td style="vertical-align: middle;"><strong>20.06</strong> </td>
-
-                <td style="vertical-align: middle;">28.60</td>
-                <td style="vertical-align: middle;">13.60</td>
-                <td style="vertical-align: middle;">16.47</td>
-                <td style="vertical-align: middle;">24.63</td>
-                <td style="vertical-align: middle;"><strong>21.95</strong></td>
-                <td style="vertical-align: middle;"><strong>20.83</strong></td>
-
-              </tr>
-
-              <tr>
-                <td style="vertical-align: middle;"></td>
-                <td style="text-align: left; padding: 2px 10px;"><b class="">
-                  <a href="https://arxiv.org/pdf/2403.04473" class="ext-link" style="font-size: 16px; margin-left: 5px;">
-                    TextMonkey
-                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">HUST</p>
-                </a></b></td>
-                <td style="vertical-align: middle;">7B</td>
-                <td style="vertical-align: middle; ">2024-08-26</td>
-
-                <td style="vertical-align: middle;"><strong>17.8</strong></td>                              
-
-                <td style="vertical-align: middle;">37.30</td>
-                <td style="vertical-align: middle;">11.69</td>
-                <td style="vertical-align: middle;"> 5.93 </td>
-                <td style="vertical-align: middle;">16.14</td>
-                <td style="vertical-align: middle;">14.26</td>
-
-
-                <td style="vertical-align: middle;"><strong>18.18</strong> </td>
-                <td style="vertical-align: middle;"><strong>17.06</strong> </td>
-
-                <td style="vertical-align: middle;">30.40</td>
-                <td style="vertical-align: middle;">2.20</td>
-                <td style="vertical-align: middle;"> 4.42 </td>
-                <td style="vertical-align: middle;">20.01</td>
-                <td style="vertical-align: middle;"><strong>15.96</strong></td>
-                <td style="vertical-align: middle;"><strong>14.26</strong></td> 
-
-              </tr>         
-
-
-          </tbody>                                                   
-        </table> 
-        
-        <!-- <p style="margin-top: -20px;">
-          <strong style="color: #22a56e; font-size: 18px;" >Green date</strong> indicates the newly added/updated models  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          - indicates closed-source models
-        </p>
-
-        <p style=" text-align: left;">
-          1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 2 fps to ensure the stability of the API.
-          </br>2* The videos less than 384 seconds are sampled at 1 fps, and for those longer than 384 seconds, we extract 384 frames uniformly. All the frames are resized to 512x512 resolution to fit within GPT-4o’s max context length.
-        </p> -->
-              
-
         </div>
       </div>
     </div>
-
   </div>
-</section>
+</div>
+
+
+
 
 <!-- DATASET SECTION -->
 <section class="hero is-light is-small">
@@ -1364,68 +275,16 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Data Examples</h2>
           <div class="content has-text-justified">
-            <p style="text-align: center;", class="mt-3">
-              <strong>All data are freshly collected and human-annotated, with superior resolution, task complexity, and real-world utility.</strong>
-            </p>
             <div class="box m-5">
               <!-- <div TODO: more pic> -->
               <div id="results-carousel" class="carousel results-carousel">  
 
-                  <div class="content has-text-centered image-wrapper" >
-                    <img src="static/images/highlight_frames/VFntoBRGF1A.png" style="width: 80%;"/>
-                  </div>
-                
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/p84O3JAp_IM.png" style="width: 80%;"/>
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/AF8d72mA41M.png" style="width: 80%;"/>              
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/pwVJizpCuDQ.png" style="width: 80%;"/>              
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/ad_attri_signal.png" style="width: 80%;"/>              
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/ad_driver_attention.png" style="width: 80%;"/>              
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/1.reasoning_intention.png" style="width: 80%;"/>              
-                  </div>
-
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/2.remote_sensing_cnt.png" style="width: 80%;"/>              
-                  </div>
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/3.othertext.png" style="width: 80%;"/>              
-                  </div>
-                  <!-- <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/4.phone.png" style="width: 80%;"/>              
-                  </div> -->
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/5.reasoning_calculate.png" style="width: 80%;"/>              
-                  </div>   
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/6.monitoring_exist.png" style="width: 80%;"/>              
-                  </div>       
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/7.advertise.png" style="width: 80%;"/>              
-                  </div>
-                  <div class="content has-text-centered image-wrapper">
-                    <img src="static/images/highlight_frames/8.ad_relation_ego2vehicle.png" style="width: 80%;"/>              
-                  </div>
  
               </div>
               <div class="content has-text-centered" style = "margin-top: 5%;">
-                <img src="static/images/teaser_tasks.png" alt="teaser_tasks" width="80%"/>
+                <img src="static/images/main.png" alt="teaser_tasks" width="120%"/>
                 <p style="text-align: center;", class="mt-3">
-                  <strong> Diagram of MME-RealWorld</strong>: Our benchmark contains five real-world image domains,covering 43 perception and reasoning subtasks. Each QA pair offers five options. We highlight andmagnify the parts of the image relevant to the question in a red box for better visibility.
+                  <strong> Diagram of MME-Unify</strong>: Our Benchmark contains 3 main domains, covering 15 subtasks to fully evaluate unified MLLMs's understanding, generation, and unified capabilities. Especially, each unify task contains at least two QA pairs: Image multi-choice question and Text multi-choice. Moreover, VCoT task requires model to output action, location and generate image simultaneously.
                 </p>
               </div>
             </div>
@@ -1434,46 +293,30 @@
         </div>
       </div>
     </div>
-
         
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content has-text-centered">
-          <h2 class="title is-3" style="margin-top: 30px;">Benchmark Statistics</h2>
-          
-          <!-- bing tu -->
-          <!-- <div class="box m-5">
-            <div class="container-wrapper">
-              <div id="container-task" style = "max-width: 100%;margin-left:10%;"></div>
-              <div id="image-container">
-                <img src="static/images/exp_results/comparison.png" alt="data-composition" style="max-width: 80%; display: inline-block; margin-right: 10%;"/>
-              </div>
-            </div>
-            <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
-            <script type="text/javascript" src="static/js/bingtu-task.js"></script>
-            <p style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;"> 
-              (Left) <strong>Image categories</strong>: Our benchmark covers 6 key domains and 14 sub-class image types. 
-              <br> (Right) <strong>Comparison of MME-RealWorld with other benchmarks</strong>: highlights its status as the largest fully human-annotated dataset, 
-              featuring the highest average resolution and the most challenging tasks, emphasizing its unprecedented scale and focus on real-world applications.<br/>
-            </p>
-          </div> -->
-            
-          <div class="box m-5">
-            <div id="container-object">
-              <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
-              <script type="text/javascript" src="static/js/bingtu-object.js"></script>
-            </div>
-            <p style="text-align: center; margin-top:3%;margin-left: auto; margin-right: auto; width: 80%;"> 
-              <strong>Task Categories</strong>: Our benchmark spans 5 key domains and 43 sub-class tasks highly related to real-world scenarios, including 10,000 high-resolution images and 29,429 annotations.
-            </p>
-          </div>
-
-          
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Benchmark Statistics</h2>
+            <div class="content has-text-justified">
+              <div class="box m-5">
+                <!-- <div TODO: more pic> -->
+                <div id="results-carousel" class="carousel results-carousel">  
+  
    
-
+                </div>
+                <div class="content has-text-centered" style = "margin-top: 5%;">
+                  <img src="static/images/Bin.png" alt="teaser_tasks" width="80%"/>
+                  <p style="text-align: center;", class="mt-3">
+                    <strong> A comprehensive visualization of the diverse tasks in MME-Unify</strong>: The figure illustrates the wide-ranging nature of the tasks covered in our benchmark, which spans from traditional understanding tasks to complex mixed-modality generation challenges.
+                  </p>
+                </div>
+              </div>
+            </div> 
+  
+          </div>
         </div>
       </div>
-    </div>
 
 
     <div class="columns is-centered">
@@ -1483,10 +326,23 @@
 
           <div class="box m-5" >
             <div class="content has-text-centered">
-              <img src="static/images/exp_results/comparison.png" alt="data-composition" style="max-width: 60%;"/>
-              <p style="text-align: center; margin-left: auto; margin-top:1%;margin-right: auto; width: 80%;" >
-                <strong>Comparison of MME-RealWorld with other benchmarks</strong>: highlights its status as the largest fully human-annotated dataset, 
-              featuring the highest average resolution and the most challenging tasks, emphasizing its unprecedented scale and focus on real-world applications.<br/>
+              <img src="static/images/Comparision.png" alt="data-composition" style="max-width: 90%;"/>
+              <p style="text-align: center; margin-left: auto; margin-top:1%;margin-right: auto; width: 90%;" >
+                <strong>Comparison of MME-Unify and other Benchmark.</strong>:
+                SIPU: Single Image Perception &amp; Understanding; 
+                MITIU: Multiple &amp; Interleaved Image-Text Understanding; 
+                VPU: Video Perception &amp; Understanding; 
+                CIVG: Conditional Image-to-Video Generation; 
+                FIR: Fine-grained Image Reconstruction; 
+                TIE: Text-Guided Image Editing; 
+                TIG: Text-to-Image Generation; 
+                TVG: Text-to-Video Generation; 
+                VP: Video Prediction; 
+                IEE: Image Editing and Explaining; 
+                CSQ: Common Sense Question Answering; 
+                AL: Auxiliary Lines; 
+                SD: SpotDiff; 
+                VCoT: Visual CoT.<br/><br/>
               </p>
             </div>
           </div>
@@ -1512,57 +368,21 @@
 
     <div class="columns is-centered">
       <div class="column has-text-centered content">
-        <h2 class="title is-3">Frequency of Outputting Answer "E" </h2>
+        <h2 class="title is-3">Accuracy on Visual CoT Task </h2>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/exp_results/close_source_e.png" alt="e" width="70%"/>
+              <img src="static/images/Accuracy.png" alt="e" width="70%"/>
               <p style="text-align: center; margin-left: auto; margin-right: auto; width: 70%;" >
                 <strong>
-                  Frequency of outputting answer "E" for different models 
+                  Accuracy distribution across different dimensions on Visual CoT task
                 </strong>:  
-                across various domains. The notation in parentheses indicates the task type: P for perception and R for reasoning tasks.
+                (a) action, (b) location, and (c) image.
               </p>
             </div>
           </div>
 
-        <h2 class="title is-3">Confusion Matrix </h2>
-        <div class="box m-5">
-          <div class="content has-text-centered">
-            <img src="static/images/exp_results/confuse.png" alt="confuse" width="70%"/>
-            <p style="text-align: center; margin-left: auto; margin-right: auto; width: 70%;" >
-              <strong>
-                Confusion Matrix Across Models Highlighting Error Distribution Patterns
-              </strong>:  
-              The matrix reveals distinct response behaviors among different MLLMs. Larger models tend to select safer options, while smaller models exhibit a bias toward the first option.
-            </p>
-          </div>
-        </div>        
-      </div>
-    </div>
-
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">MME-RealWorld-CN</h2>
-
-
-        <div class="box m-5">
-            
-          <div id="results-carousel" class="carousel results-carousel">  
-          
-            <div class="content has-text-centered">
-              <img src="static/images/exp_results/MME_RealWorld_CN_Perception.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(1) Experimental results on the MME-RealWorld-CN perception tasks. </p>
-            </div>
-          
-            <div class="content has-text-centered">
-              <img src="static/images/exp_results/MME_RealWorld_CN_Reasoning.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(2) Experimental results on the MME-RealWorld-CN reasoning tasks.</p>
-            </div>
-
-
-          </div>
-
-        </div>
 
 
         <h2 class="title is-3">Experimental Results on All Task Splits</h2>
@@ -1571,34 +391,15 @@
           <div id="results-carousel" class="carousel results-carousel">  
           
             <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_OCR.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(1) Experimental results on the OCR tasks. </p>
+              <img src="static/images/generation_task.png" alt="" width="90%"/>
+              <p style="margin-bottom: 30px;">(1) Experimental results on various generation tasks. </p>
             </div>
           
             <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_Diagram_Table.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(2) Experimental results on the Diagram and Table tasks.</p>
+              <img src="static/images/unify_task.png" alt="" width="100%"/>
+              <p style="margin-bottom: 30px;">(2) Experimental results on various unify tasks.</p>
             </div>
 
-            <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_RS.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(3) Experimental results on the Remote Sensing tasks.</p>
-            </div>
-
-            <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_AD_Perception.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(4.1) Experimental results on the Autonomous Driving perception tasks.</p>
-            </div>
-
-            <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_AD_Reasoning.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(4.1) Experimental results on the Autonomous Driving reasoning tasks.</p>
-            </div>
-
-            <div class="content has-text-centered image-wrapper">
-              <img src="static/images/exp_results/MME_RealWorld_Monitoring.png" alt="" width="70%"/>
-              <p style="margin-bottom: 30px;">(5) Experimental results on the Monitoring tasks.</p>
-            </div>
           </div>
 
           </div>
@@ -1621,7 +422,7 @@
   <div class="container is-max-desktop content">
     <pre><code>
       @article{zhang2024mme,
-        title={MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?},
+        title={MME-Unify: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?},
         author={Zhang, Yi-Fan and Zhang, Huanyu and Tian, Haochen and Fu, Chaoyou and Zhang, Shuangqing and Wu, Junfei and Li, Feng and Wang, Kun and Wen, Qingsong and Zhang, Zhang and others},
         journal={arXiv preprint arXiv:2408.13257},
         year={2024}
