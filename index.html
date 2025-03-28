@@ -84,19 +84,17 @@
               Yi-Fan Zhang<sup style="color:#18acfb;">1</sup><sup>*</sup><sup>†</sup><sup>,</sup>
             </span>
             <span class="author-block">
-              Chaoyou Fu<sup style="color:#ffac33;">4</sup><sup>,</sup>
+              Chaoyou Fu<sup style="color:#ffac33;">3</sup><sup>,</sup>
             </span>
             <span class="author-block">
               Yang Shi<sup style="color:#9400D3;">2</sup><sup>,</sup>
             </span>
-            <span class="author-block">
-              Jianshu Zeng<sup style="color:#9400D3;">2</sup><sup>,</sup>
             </span>
             <span class="author-block">
               Bingyan Nie<sup style="color:#18acfb;">1</sup><sup>,</sup>
             </span>
             <span class="author-block">
-              Hongkai Chen<sup style="color:#1a4ebf;">5</sup><sup>,</sup>
+              Hongkai Chen<sup style="color:#1a4ebf;">4</sup><sup>,</sup>
             </span>
             <span class="author-block">
               Zhang Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup>
@@ -105,7 +103,7 @@
               Liang Wang<sup style="color:#18acfb;">1</sup><sup>,</sup>
             </span>
             <span class="author-block">
-              Tieniu Tan<sup style="color:#ffac33;">4</sup>
+              Tieniu Tan<sup style="color:#ffac33;">3</sup>
             </span>
           </div>
           
@@ -117,13 +115,10 @@
               <sup style="color:#9400D3;">2</sup>PKU,
             </span>
             <span class="author-block">
-              <sup style="color:#ed4b82;">3</sup>UCAS,
+              <sup style="color:#ffac33;">3</sup>NJU,
             </span>
             <span class="author-block">
-              <sup style="color:#ffac33;">4</sup>NJU,
-            </span>
-            <span class="author-block">
-              <sup style="color:#1a4ebf;">5</sup>Vivo
+              <sup style="color:#1a4ebf;">4</sup>Vivo
             </span>
             <br>
             <span class="author-block" style="font-size:25px; text-shadow: 2px 2px 4px rgba(67, 113, 232, 0.5);">
@@ -224,39 +219,475 @@
   }
 </script>
 
-<div class="columns is-centered">
-  <div class="container">
+<div class="columns is-centered" style="display: flex; justify-content: center; width: 100%;">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
     <div class="content has-text-centered">
       <h2 class="title is-3">Leaderboard</h2>
-
-      <div class="box m-5">
-        <div class="content has-text-centered">
-          <img src="static/images/leaderboard.png" alt="leaderboard" style="max-width: 140%;"/>
-          <p style="text-align: center; margin-top: 1%;">
-            <strong>Comparison of multimodal models on understanding, generation, unifying tasks, and overall MME-U Score.</strong><br/>
-            SIPU: Single Image Perception &amp; Understanding; 
-            MITIU: Multiple &amp; Interleaved Image-Text Understanding; 
-            VPU: Video Perception &amp; Understanding; 
-            CIVG: Conditional Image-to-Video Generation; 
-            FIR: Fine-grained Image Reconstruction; 
-            TIE: Text-Guided Image Editing; 
-            TIG: Text-to-Image Generation; 
-            TVG: Text-to-Video Generation; 
-            VP: Video Prediction; 
-            IEE: Image Editing and Explaining; 
-            CSQ: Common Sense Question Answering; 
-            AL: Auxiliary Lines; 
-            SD: SpotDiff; 
-            VCoT: Visual CoT.<br/>
-            <sup>*</sup> denotes U-MLLMs with the ability to generate interleaved images and texts, while <code>'-'</code> indicates that the model is unable to finish the corresponding task and 
-            <span style="text-decoration: underline;">underlined</span> content signifies the best performance within a single model across all methods on this task.
+       
+      <div class="content">
+        <p class="mt-3">Models are ranked according to their average performance on understanding, generation, and unify tasks, from highest to lowest. 
+          <strong>"SIPU", "MTITU", "VPU", "CVIG", "FIR", "TIE", "TIG", "TVG", "VP", "IEE", "CSQ", "AL", "SD", "VCoT" </strong> each indicate a specific task domain. 
+          <strong>"Avg"</strong> indicates the average accuracy across subtasks in each domain. <strong>"-"</strong> indicates that the model is unable to finish the corresponding task.
+        </p>
+        <div class="video-duration">
+          <p>
+            By default, this leaderboard is sorted by results with <strong>Overall</strong>. To view other sorted results, please click on the corresponding cell.
           </p>
+        </div>
+  
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+          <table class="js-sort-table" id="results" style="width: 85%; transform: scale(0.9); transform-origin: center top;">
+            <thead>
+              <tr>
+                <th rowspan="3" class="no-sort" style="vertical-align: middle; width: 30px;" data-js-sort-colNum="none"><strong>#</strong></th>
+                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 215px;" data-js-sort-colNum="none"><strong>Method</strong></th>
+                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 30px;"><strong>LLM</strong></th>
+                <th rowspan="1" class="no-sort" style="vertical-align: middle; width: 100px;"><strong>Date</strong></th>
+                <th colspan="1" style="vertical-align: middle; width: 30 ;font-style: italic" data-js-sort-colNum="4"><strong>Overall</strong></th>
+                <th colspan="5" style="vertical-align: middle; width: 250px;" data-js-sort-colNum="9"><strong>Understanding</strong></th>
+                <th colspan="8" style="vertical-align: middle; width: 380px;" data-js-sort-colNum="17"><strong>Generation</strong></th>
+                <th colspan="6" style="vertical-align: middle; width: 280px;" data-js-sort-colNum="25"><strong>Unify</strong></th>
+              </tr>
+              <tr>
+                <th colspan="3" class="no-sort"><strong>Task Split</strong></th>
+                <th data-js-sort-colNum="4" style="font-style: italic;"><strong>Avg</strong></th>
+                <th data-js-sort-colNum="5"><strong>SIPU</strong></th>
+                <th data-js-sort-colNum="6"><strong>MTITU</strong></th>
+                <th data-js-sort-colNum="7"><strong>VPU</strong></th>
+                <th data-js-sort-colNum="8"><strong>Avg</strong></th>
+                <th data-js-sort-colNum="9"><strong>CVIG</strong></th>
+                <th data-js-sort-colNum="10"><strong>FIR</strong></th>
+                <th data-js-sort-colNum="11"><strong>TIE</strong></th>
+                <th data-js-sort-colNum="12"><strong>TIG</strong></th>
+                <th data-js-sort-colNum="13"><strong>TVG</strong></th>
+                <th data-js-sort-colNum="14"><strong>VP</strong></th>
+                <th data-js-sort-colNum="15"><strong>Avg</strong></th>
+                <th data-js-sort-colNum="16"><strong>IEE</strong></th>
+                <th data-js-sort-colNum="17"><strong>CSQ</strong></th>
+                <th data-js-sort-colNum="18"><strong>AL</strong></th>
+                <th data-js-sort-colNum="19"><strong>SD</strong></th>
+                <th data-js-sort-colNum="20"><strong>VCoT</strong></th>
+                <th data-js-sort-colNum="21"><strong>Avg</strong></th>
+              </tr>
+              <tr>
+                <th colspan="3" class="no-sort"><strong>QA pairs</strong></th>
+                <th data-js-sort-colNum="4" style="font-style: italic;"><strong>23599</strong></th>
+                <th data-js-sort-colNum="5"><strong>5740</strong></th>
+                <th data-js-sort-colNum="6"><strong>3738</strong></th>
+                <th data-js-sort-colNum="7"><strong>5433</strong></th>
+                <th data-js-sort-colNum="8"><strong>14911</strong></th>
+                <th data-js-sort-colNum="9"><strong>2196</strong></th>
+                <th data-js-sort-colNum="10"><strong>3660</strong></th>
+                <th data-js-sort-colNum="11"><strong>500</strong></th>
+                <th data-js-sort-colNum="12"><strong>500</strong></th>
+                <th data-js-sort-colNum="13"><strong>498</strong></th>
+                <th data-js-sort-colNum="14"><strong>1334</strong></th>
+                <th data-js-sort-colNum="15"><strong>8688</strong></th>
+                <th data-js-sort-colNum="16"><strong>500</strong></th>
+                <th data-js-sort-colNum="17"><strong>500</strong></th>
+                <th data-js-sort-colNum="18"><strong>500</strong></th>
+                <th data-js-sort-colNum="19"><strong>500</strong></th>
+                <th data-js-sort-colNum="20"><strong>500</strong></th>
+                <th data-js-sort-colNum="21"><strong>2500</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://deepmind.google/technologies/gemini/flash/" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                  Gemini2.0-flash-exp
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Google DeepMind</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle; color: #6fbf73;"><b>2025-03-12</b></td>
+                <td style="vertical-align: middle;"><strong>37.04</strong></td>  
+                <td style="vertical-align: middle;">74.00</td>
+                <td style="vertical-align: middle;">71.50</td>
+                <td style="vertical-align: middle;">53.02</td>
+                <td style="vertical-align: middle;"><strong>66.17</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">77.61</td>
+                <td style="vertical-align: middle;">43.54</td>
+                <td style="vertical-align: middle;">57.56</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>29.79</strong></td>
+                <td style="vertical-align: middle;">10.50</td>
+                <td style="vertical-align: middle;">56.44</td>
+                <td style="vertical-align: middle;">3.84</td>
+                <td style="vertical-align: middle;">5.00</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>15.16</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class=""><a href="https://github.com/mio-team/mio" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                  MIO-Instruct
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Beihang University</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">MIO-7B</td>
+                <td style="vertical-align: middle; color: #6fbf73;"><b>2024-09-26</b></td>
+                <td style="vertical-align: middle;"><strong>32.12</strong></td>  
+                <td style="vertical-align: middle;">52.00</td>
+                <td style="vertical-align: middle;">33.50</td>
+                <td style="vertical-align: middle;">39.01</td>
+                <td style="vertical-align: middle;"><strong>41.50</strong></td>
+                <td style="vertical-align: middle;">51.24</td>
+                <td style="vertical-align: middle;">59.29</td>
+                <td style="vertical-align: middle;">43.66</td>
+                <td style="vertical-align: middle;">48.23</td>
+                <td style="vertical-align: middle;">51.88</td>
+                <td style="vertical-align: middle;">66.37</td>
+                <td style="vertical-align: middle;"><strong>53.45</strong></td>
+                <td style="vertical-align: middle;">7.00</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>1.40</strong></td>
+              </tr>
+              
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/AILab-CVC/SEED" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    SEED-LLaMA
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tencent AI Lab</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">LLama-8B</td>
+                <td style="vertical-align: middle;">2023-12-18</td>
+                <td style="vertical-align: middle;"><strong>19.64</strong></td>                                
+                <td style="vertical-align: middle;">30.00</td>
+                <td style="vertical-align: middle;">20.00</td>
+                <td style="vertical-align: middle;">28.57</td>
+                <td style="vertical-align: middle;"><strong>26.19</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">57.00</td>
+                <td style="vertical-align: middle;">42.26</td>
+                <td style="vertical-align: middle;">41.96</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>23.54</strong></td>
+                <td style="vertical-align: middle;">4.50</td>
+                <td style="vertical-align: middle;">32.67</td>
+                <td style="vertical-align: middle;">3.84</td>
+                <td style="vertical-align: middle;">5.00</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>9.20</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/mit-han-lab/vila-u" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    VILA-U
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Tsinghua University</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">LLama-7B</td>
+                <td style="vertical-align: middle;">2024-09-06</td>
+                <td style="vertical-align: middle;"><strong>18.58</strong></td>                              
+                <td style="vertical-align: middle;">51.04</td>
+                <td style="vertical-align: middle;">32.25</td>
+                <td style="vertical-align: middle;">36.54</td>
+                <td style="vertical-align: middle;"><strong>39.95</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">45.10</td>
+                <td style="vertical-align: middle;">49.64</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>15.79</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://arxiv.org/abs/2501.17811" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    Janus-Pro
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">DeepSeek-AI</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">DeepSeek-LLM-7B-base</td>
+                <td style="vertical-align: middle;">2025-01-29</td>
+                <td style="vertical-align: middle;"><strong>18.10</strong></td>                              
+                <td style="vertical-align: middle;">59.56</td>
+                <td style="vertical-align: middle;">43.50</td>
+                <td style="vertical-align: middle;">42.22</td>
+                <td style="vertical-align: middle;"><strong>48.43</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">35.29</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>5.88</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://arxiv.org/abs/2411.07975" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    Janus-Flow
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">DeepSeek-AI</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">DeepSeek-LLM-1.5B-base</td>
+                <td style="vertical-align: middle;">2024-11-12</td>
+                <td style="vertical-align: middle;"><strong>16.31</strong></td>                                
+                <td style="vertical-align: middle;">41.49</td>
+                <td style="vertical-align: middle;">32.00</td>
+                <td style="vertical-align: middle;">35.16</td>
+                <td style="vertical-align: middle;"><strong>43.44</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">32.88</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>5.48</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/Gen-Verse/HermesFlow" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    HermersFlow
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Peking University</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">Phi-1.5</td>
+                <td style="vertical-align: middle;">2025-2-17</td>
+                <td style="vertical-align: middle;"><strong>14.01</strong></td>                              
+                <td style="vertical-align: middle;">41.49</td>
+                <td style="vertical-align: middle;">33.00</td>
+                <td style="vertical-align: middle;">28.32</td>
+                <td style="vertical-align: middle;"><strong>34.27</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">46.48</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>7.75</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/eric-ai-lab/MiniGPT-5" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    MiniGPT-5
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">University of California</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">Vicuna-7B</td>
+                <td style="vertical-align: middle;">2023-10-03</td>
+                <td style="vertical-align: middle;"><strong>13.97</strong></td>                              
+                <td style="vertical-align: middle;">19.25</td>
+                <td style="vertical-align: middle;">10.92</td>
+                <td style="vertical-align: middle;">15.93</td>
+                <td style="vertical-align: middle;"><strong>15.37</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">38.96</td>
+                <td style="vertical-align: middle;">35.04</td>
+                <td style="vertical-align: middle;">35.48</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>18.25</strong></td>
+                <td style="vertical-align: middle;">5.00</td>
+                <td style="vertical-align: middle;">24.75</td>
+                <td style="vertical-align: middle;">7.69</td>
+                <td style="vertical-align: middle;">4.00</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>8.29</strong></td>
+              </tr> 
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/baaivision/Emu3" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    Emu3
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">BAAI</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">LLama-8B</td>
+                <td style="vertical-align: middle;">2024-09-27</td>
+                <td style="vertical-align: middle;"><strong>13.79</strong></td>                              
+                <td style="vertical-align: middle;">45.75</td>
+                <td style="vertical-align: middle;">30.50</td>
+                <td style="vertical-align: middle;">23.32</td>
+                <td style="vertical-align: middle;"><strong>33.19</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">49.08</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>8.18</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/GAIR-NLP/anole" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    Anole
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">GAIR</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">2024-07-08</td>
+                <td style="vertical-align: middle;"><strong>13.20</strong></td>                                
+                <td style="vertical-align: middle;">17.17</td>
+                <td style="vertical-align: middle;">14.50</td>
+                <td style="vertical-align: middle;">9.00</td>
+                <td style="vertical-align: middle;"><strong>13.56</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">36.64</td>
+                <td style="vertical-align: middle;">43.42</td>
+                <td style="vertical-align: middle;">41.52</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>19.91</strong></td>
+                <td style="vertical-align: middle;">2.00</td>
+                <td style="vertical-align: middle;">24.75</td>
+                <td style="vertical-align: middle;">1.92</td>
+                <td style="vertical-align: middle;">5.00</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>8.29</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/showlab/Show-o" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    Show-o
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Show Lab</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">Phi-1.5</td>
+                <td style="vertical-align: middle;">2024-8-22</td>
+                <td style="vertical-align: middle;"><strong>12.74</strong></td>                              
+                <td style="vertical-align: middle;">32.47</td>
+                <td style="vertical-align: middle;">34.75</td>
+                <td style="vertical-align: middle;">25.66</td>
+                <td style="vertical-align: middle;"><strong>30.96</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">43.54</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>7.26</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>-</strong></td>
+              </tr>
+    
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;"><b class="">
+                  <a href="https://github.com/kohjingyu/gill" class="ext-link" style="font-size: 16px; margin-left: 5px;">
+                    GILL
+                  <p style="font-size: 12px; margin-left: 5px; color: #858383;">Carnegie Mellon University</p>
+                </a></b></td>
+                <td style="vertical-align: middle;">LLama</td>
+                <td style="vertical-align: middle;">2023-03-26</td>
+                <td style="vertical-align: middle;"><strong>11.91</strong></td>                              
+                <td style="vertical-align: middle;">22.18</td>
+                <td style="vertical-align: middle;">6.00</td>
+                <td style="vertical-align: middle;">3.56</td>
+                <td style="vertical-align: middle;"><strong>10.58</strong></td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">50.67</td>
+                <td style="vertical-align: middle;">35.71</td>
+                <td style="vertical-align: middle;">46.60</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;">-</td>
+                <td style="vertical-align: middle;"><strong>22.16</strong></td>
+                <td style="vertical-align: middle;">8.00</td>
+                <td style="vertical-align: middle;">4.95</td>
+                <td style="vertical-align: middle;">1.92</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;">0</td>
+                <td style="vertical-align: middle;"><strong>2.98</strong></td>
+              </tr> 
+
+            </tbody>                                                   
+          </table>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<style>
+  /* 只调整表格整体大小，保持内部比例 */
+  @media (max-width: 1400px) {
+    .js-sort-table {
+      width: 85% !important;
+      transform: scale(0.9);
+      transform-origin: center top;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .js-sort-table {
+      width: 90% !important;
+      transform: scale(0.85);
+      transform-origin: center top;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .js-sort-table {
+      width: 95% !important;
+      transform: scale(0.8);
+      transform-origin: center top;
+    }
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .js-sort-table {
+    margin: 0 auto;
+  }
+</style>
 
 
 
